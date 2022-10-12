@@ -50,3 +50,16 @@ nextButton.addEventListener('click', function () {
       nextImage.classList.add('active')
      
 })
+
+prevButton.addEventListener('click', function () {
+      const slidesImg = document.querySelectorAll('.slides > img');
+      const currentImage = slidesImg[activeImage];
+      // tolgo la classe active per non mostrarla più
+      currentImage.classList.remove('active');
+      // faccio un decremento della mia immagine per selezionare la successiva
+      activeImage--;
+      // ora che ho incrementato devo aggiungere una variabile per l'immagine e metterle la classe active
+      const nextImage = slidesImg[activeImage];
+      nextImage.classList.add('active')
+     
+})
