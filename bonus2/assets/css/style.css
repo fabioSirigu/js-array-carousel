@@ -8,12 +8,18 @@
       height: 100px;
       aspect-ratio: 1 / 1;
       object-fit: cover;
+      
 }
+
+.active_thumb {
+      opacity: 1;
+}
+
 
 .thumbnails img {
       display: block;
       width: 100%;
-      opacity: 0.3;
+      height: 100px;
 }
 
 .next,
@@ -32,8 +38,4 @@
 
 .prev {
       bottom: 5px;
-}
-
-.active_thumb {
-      opacity: 1;
 }

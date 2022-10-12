@@ -33,6 +33,7 @@ for (let i = 0; i < slidesArray.length; i++) {
 }
 
 
+
 // seleziono i button che userò come next e prev
 const nextButton = document.querySelector('.next');
 const prevButton = document.querySelector('.prev');
