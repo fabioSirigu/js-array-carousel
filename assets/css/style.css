@@ -4,6 +4,8 @@
 
 img {
       max-width: 100%;
+      height: 100%;
+      object-fit: cover;
       display: none;
 }
 
@@ -12,6 +14,7 @@ img {
 }
 
 .slides {
+      height: 500px;
 }
 .next,
 .prev {
@@ -19,6 +22,8 @@ img {
       height: 50px;
       border-radius: 50%;
       position: absolute;
+      left: 50%;
+      transform: translate(-50%);
 }
 
 .next {
