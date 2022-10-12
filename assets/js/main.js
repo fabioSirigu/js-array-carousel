@@ -17,7 +17,8 @@ console.log(slidesArray);
 
 //seleziono l'elemento nel quale inserirà le immagini
 
-let slidesEl = document.querySelector('.slides');
+const slidesEl = document.querySelector('.slides');
+
 /* slidesEl.insertAdjacentHTML('beforeend', slidesArray[2]) */
 
 // creo una variabile per tenere sotto controllo quale immagine è attiva
