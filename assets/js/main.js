@@ -48,7 +48,9 @@ nextButton.addEventListener('click', function () {
       // ora che ho incrementato devo aggiungere una variabile per l'immagine e metterle la classe active
       const nextImage = slidesImg[activeImage];
       nextImage.classList.add('active')
-     
+      
+      // quando sono all'ultima immagine devo tornare alla prima
+      
 })
 
 prevButton.addEventListener('click', function () {
