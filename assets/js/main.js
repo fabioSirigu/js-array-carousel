@@ -46,11 +46,16 @@ nextButton.addEventListener('click', function () {
       currentImage.classList.remove('active');
       // faccio un incremento della mia immagine per selezionare la successiva
       activeImage++;
+
+      // quando sono all'ultima immagine devo tornare alla prima
+      if (activeImage === 5){
+            activeImage = 0
+            console.log(activeImage)
+      }
       // ora che ho incrementato devo aggiungere una variabile per l'immagine e metterle la classe active
       const nextImage = slidesImg[activeImage];
       nextImage.classList.add('active')
       
-      // quando sono all'ultima immagine devo tornare alla prima
       
 })
 
@@ -61,6 +66,12 @@ prevButton.addEventListener('click', function () {
       currentImage.classList.remove('active');
       // faccio un decremento della mia immagine per selezionare la successiva
       activeImage--;
+      
+      // quando sono alla prima immagine devo tornare all'ultima
+      if (activeImage === -1){
+            activeImage = 4
+            console.log(activeImage)
+      }
       // ora che ho incrementato devo aggiungere una variabile per l'immagine e metterle la classe active
       const nextImage = slidesImg[activeImage];
       nextImage.classList.add('active')
